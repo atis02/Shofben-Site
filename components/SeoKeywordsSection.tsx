@@ -68,7 +68,7 @@ export default function SeoKeywordsSection() {
                   Kombi & Hermetik Şofben Servisi
                 </Typography>
                 <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                  Avrupa Yakası ve Anadolu Yakası mobil ekipler
+                  İstanbul genelinde mobil ekipler
                 </Typography>
               </Box>
             </Box>

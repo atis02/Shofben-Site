@@ -8,7 +8,10 @@ type LogoProps = {
 
 export default function Logo({ height = 48 }: LogoProps) {
   return (
-    <Link href="/" style={{ textDecoration: "none", display: "inline-flex", flexShrink: 0 }}>
+    <Link
+      href="/"
+      style={{ textDecoration: "none", display: "inline-flex", flexShrink: 0 }}
+    >
       <Image
         src="/logo.avif"
         alt={SITE.name}

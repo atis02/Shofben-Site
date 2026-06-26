@@ -15,23 +15,24 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ShieldIcon from "@mui/icons-material/Shield";
 import VerifiedIcon from "@mui/icons-material/Verified";
-import {
-  BRAND_LINKS,
-  FOOTER_SERVICES,
-  SITE,
-} from "@/lib/constants";
+import { BRAND_LINKS, FOOTER_SERVICES, SITE } from "@/lib/constants";
 import { brandNavy } from "@/lib/theme";
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <Box component="footer" sx={{ bgcolor: brandNavy, color: "#fff", pt: 8, pb: 4 }}>
+    <Box
+      component="footer"
+      sx={{ bgcolor: brandNavy, color: "#fff", pt: 8, pb: 4 }}
+    >
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid size={{ xs: 12, md: 4 }}>
             <Logo />
-            <Typography sx={{ mt: 2, color: "#94a3b8", lineHeight: 1.7, maxWidth: 320 }}>
+            <Typography
+              sx={{ mt: 2, color: "#94a3b8", lineHeight: 1.7, maxWidth: 320 }}
+            >
               İstanbul genelinde 7/24 doğalgaz şofben tamiri, bakımı ve montajı.
               15 yılı aşkın deneyim, garantili işçilik, aynı gün servis.
             </Typography>
@@ -162,11 +163,18 @@ export default function Footer() {
                   key={phone.href}
                   component="a"
                   href={phone.href}
-                  sx={{ display: "flex", gap: 1.5, textDecoration: "none", color: "inherit" }}
+                  sx={{
+                    display: "flex",
+                    gap: 1.5,
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
                 >
                   <PhoneIcon sx={{ color: "primary.main" }} />
                   <Box>
-                    <Typography sx={{ fontWeight: 700 }}>{phone.display}</Typography>
+                    <Typography sx={{ fontWeight: 700 }}>
+                      {phone.display}
+                    </Typography>
                     <Typography variant="body2" sx={{ color: "#94a3b8" }}>
                       {phone.label}
                     </Typography>
@@ -178,11 +186,18 @@ export default function Footer() {
                 href={SITE.whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                sx={{ display: "flex", gap: 1.5, textDecoration: "none", color: "inherit" }}
+                sx={{
+                  display: "flex",
+                  gap: 1.5,
+                  textDecoration: "none",
+                  color: "inherit",
+                }}
               >
                 <WhatsAppIcon sx={{ color: "#22c55e" }} />
                 <Box>
-                  <Typography sx={{ fontWeight: 700 }}>{SITE.whatsapp.display}</Typography>
+                  <Typography sx={{ fontWeight: 700 }}>
+                    {SITE.whatsapp.display}
+                  </Typography>
                   <Typography variant="body2" sx={{ color: "#94a3b8" }}>
                     {SITE.whatsapp.label}
                   </Typography>
@@ -191,7 +206,9 @@ export default function Footer() {
               <Box sx={{ display: "flex", gap: 1.5 }}>
                 <AccessTimeIcon sx={{ color: "primary.main" }} />
                 <Box>
-                  <Typography sx={{ fontWeight: 700 }}>Çalışma Saatleri</Typography>
+                  <Typography sx={{ fontWeight: 700 }}>
+                    Çalışma Saatleri
+                  </Typography>
                   <Typography variant="body2" sx={{ color: "#94a3b8" }}>
                     7/24 Acil Servis Açık
                   </Typography>
@@ -202,7 +219,7 @@ export default function Footer() {
                 <Box>
                   <Typography sx={{ fontWeight: 700 }}>İstanbul</Typography>
                   <Typography variant="body2" sx={{ color: "#94a3b8" }}>
-                    Avrupa & Anadolu Yakası
+                    Tüm İstanbul
                   </Typography>
                 </Box>
               </Box>
@@ -221,11 +238,27 @@ export default function Footer() {
             © {year} {SITE.name}. Tüm hakları saklıdır.
           </Typography>
           <Stack direction="row" spacing={3}>
-            <Stack direction="row" spacing={0.5} sx={{ alignItems: "center", color: "#94a3b8", fontSize: "0.875rem" }}>
+            <Stack
+              direction="row"
+              spacing={0.5}
+              sx={{
+                alignItems: "center",
+                color: "#94a3b8",
+                fontSize: "0.875rem",
+              }}
+            >
               <ShieldIcon fontSize="small" sx={{ color: "primary.main" }} />
               Garantili İşçilik
             </Stack>
-            <Stack direction="row" spacing={0.5} sx={{ alignItems: "center", color: "#94a3b8", fontSize: "0.875rem" }}>
+            <Stack
+              direction="row"
+              spacing={0.5}
+              sx={{
+                alignItems: "center",
+                color: "#94a3b8",
+                fontSize: "0.875rem",
+              }}
+            >
               <VerifiedIcon fontSize="small" sx={{ color: "primary.main" }} />
               Sertifikalı Ekip
             </Stack>

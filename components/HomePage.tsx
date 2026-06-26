@@ -182,7 +182,7 @@ export default function HomePage() {
                   mb: 4,
                 }}
               >
-                Avrupa Yakası ve Anadolu Yakası&apos;nda doğalgazlı şofben
+                İstanbul genelinde doğalgazlı şofben
                 tamiri, bakımı ve kombi servisi. Aynı gün yerinde müdahale için
                 hemen arayın.
               </Typography>
@@ -610,7 +610,7 @@ export default function HomePage() {
               color="text.secondary"
               sx={{ fontSize: "1.125rem", lineHeight: 1.7 }}
             >
-              Avrupa ve Anadolu yakasında 20&apos;den fazla ilçede hizmet
+              İstanbul genelinde 20&apos;den fazla ilçede hizmet
               vermekteyiz. Bulunduğunuz bölgeye en yakın ekibimizi anında
               yönlendiriyoruz.
             </Typography>

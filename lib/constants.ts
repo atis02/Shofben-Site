@@ -3,7 +3,7 @@ export const SITE = {
   title:
     "Hermetik Şofben Servisi | İstanbul Doğalgazlı Şofben, Kombi ve Teknik Servis",
   description:
-    "İstanbul Avrupa ve Anadolu Yakası'nda hermetik şofben tamiri, bakımı ve kombi servisi. Aynı gün yerinde müdahale. Hemen arayın: 0552 713 67 67.",
+    "İstanbul genelinde hermetik şofben tamiri, bakımı ve kombi servisi. Aynı gün yerinde müdahale. Hemen arayın: 0552 713 67 67.",
   email: "info@dogalgazsofben.com",
   logo: "/logo.avif",
   phones: [
@@ -30,12 +30,17 @@ export const SITE = {
 
 export const IMAGES = {
   hero: "https://assets.ls-assets.com/provider/istock/2263154450.jpg?w=1200",
-  technician: "https://assets.ls-assets.com/provider/istock/2237728977.jpg?w=1200",
+  technician:
+    "https://assets.ls-assets.com/provider/istock/2237728977.jpg?w=1200",
   kombi: "https://assets.ls-assets.com/provider/istock/2237728977.jpg?w=1200",
-  hermetic: "https://assets.ls-assets.com/provider/istock/2182985078.jpg?w=1200",
-  maintenance: "https://assets.ls-assets.com/provider/istock/2156942049.jpg?w=1200",
-  installation: "https://assets.ls-assets.com/provider/istock/2273311969.jpg?w=1200",
-  spareParts: "https://assets.ls-assets.com/provider/istock/2212376280.jpg?w=1200",
+  hermetic:
+    "https://assets.ls-assets.com/provider/istock/2182985078.jpg?w=1200",
+  maintenance:
+    "https://assets.ls-assets.com/provider/istock/2156942049.jpg?w=1200",
+  installation:
+    "https://assets.ls-assets.com/provider/istock/2273311969.jpg?w=1200",
+  spareParts:
+    "https://assets.ls-assets.com/provider/istock/2212376280.jpg?w=1200",
 } as const;
 
 export const DEVICE_GALLERY = [
@@ -159,12 +164,12 @@ export const SEO_KEYWORD_BLOCKS = [
   },
   {
     title: "Şofben Bakımı",
-    text: "Yıllık şofben bakımı, kireç temizliği ve gaz ayarı ile cihazınızın ömrünü uzatır, yakıt tüketimini düşürürsünüz. İstanbul'un her iki yakasında bakım randevusu alabilirsiniz.",
+    text: "Yıllık şofben bakımı, kireç temizliği ve gaz ayarı ile cihazınızın ömrünü uzatır, yakıt tüketimini düşürürsünüz. İstanbul genelinde bakım randevusu alabilirsiniz.",
     href: "/hermetik-sofben-servisi",
   },
   {
     title: "İstanbul Teknik Servis",
-    text: "Avrupa Yakası ve Anadolu Yakası'nda mobil servis araçlarımızla 7/24 ulaşılabilir teknik servis hizmeti veriyoruz. Acil arızalarda en yakın ekibimiz yola çıkar.",
+    text: "İstanbul genelinde mobil servis araçlarımızla 7/24 ulaşılabilir teknik servis hizmeti veriyoruz. Acil arızalarda en yakın ekibimiz yola çıkar.",
     href: "/hermetik-sofben-servisi",
   },
 ] as const;

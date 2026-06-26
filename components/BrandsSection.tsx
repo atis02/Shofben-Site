@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { Box, Card, CardContent, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardContent,
+  Container,
+  Grid,
+  Typography,
+} from "@mui/material";
 import { WORK_WITH_BRANDS } from "@/lib/constants";
 import { brandNavy } from "@/lib/theme";
 
@@ -11,11 +18,18 @@ export default function BrandsSection() {
           <Typography
             component="h2"
             variant="h2"
-            sx={{ fontSize: { xs: "1.75rem", lg: "2.25rem" }, color: brandNavy, mb: 1 }}
+            sx={{
+              fontSize: { xs: "1.75rem", lg: "2.25rem" },
+              color: brandNavy,
+              mb: 1,
+            }}
           >
             Çalıştığımız Markalar
           </Typography>
-          <Typography color="text.secondary" sx={{ maxWidth: 560, mx: "auto", lineHeight: 1.7 }}>
+          <Typography
+            color="text.secondary"
+            sx={{ maxWidth: 560, mx: "auto", lineHeight: 1.7 }}
+          >
             Tüm marka şofben ve kombiler için servis hizmeti sunuyoruz
           </Typography>
         </Box>
@@ -45,15 +59,19 @@ export default function BrandsSection() {
                 <CardContent sx={{ py: 2.5, px: 1, width: "100%" }}>
                   <Typography
                     sx={{
-                      fontWeight: "fontWeight" in brand ? brand.fontWeight : 600,
+                      fontWeight:
+                        "fontWeight" in brand ? brand.fontWeight : 600,
                       fontSize:
                         "fontSize" in brand && brand.fontSize === "large"
                           ? { xs: "1.05rem", sm: "1.35rem" }
                           : { xs: "0.9rem", sm: "1.05rem" },
-                      fontStyle: "fontStyle" in brand ? brand.fontStyle : "normal",
+                      fontStyle:
+                        "fontStyle" in brand ? brand.fontStyle : "normal",
                       color: brand.color,
                       letterSpacing:
-                        "letterSpacing" in brand ? brand.letterSpacing : "normal",
+                        "letterSpacing" in brand
+                          ? brand.letterSpacing
+                          : "normal",
                       lineHeight: 1.2,
                       wordBreak: "break-word",
                     }}

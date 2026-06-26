@@ -57,7 +57,11 @@ export default function ContactActions({
       >
         WhatsApp
       </Button>
-      <Box sx={{ display: { xs: "block", sm: layout === "row" ? "none" : "block" } }}>
+      <Box
+        sx={{
+          display: { xs: "block", sm: layout === "row" ? "none" : "block" },
+        }}
+      >
         <Typography
           variant="body2"
           sx={{

@@ -17,14 +17,14 @@ export type SeoPageData = {
 };
 
 const regionBase =
-  "Avrupa Yakası'nda Beşiktaş, Bakırköy, Beylikdüzü, Fatih ve Şişli başta olmak üzere; Anadolu Yakası'nda Kadıköy, Üsküdar, Maltepe, Ataşehir ve Ümraniye dahil pek çok ilçeye mobil ekip yönlendiriyoruz. Semtinize en yakın servis aracımızı aradığınızda yola çıkar, arızayı adresinizde çözeriz.";
+  "İstanbul genelinde Beşiktaş, Bakırköy, Beylikdüzü, Fatih, Şişli, Kadıköy, Üsküdar, Maltepe, Ataşehir ve Ümraniye başta olmak üzere pek çok ilçeye mobil ekip yönlendiriyoruz. Semtinize en yakın servis aracımızı aradığınızda yola çıkar, arızayı adresinizde çözeriz.";
 
 export const SEO_PAGES: SeoPageData[] = [
   {
     slug: "hermetik-sofben-servisi",
     title: "Hermetik Şofben Servisi İstanbul | 7/24 Tamir ve Bakım",
     description:
-      "İstanbul'da hermetik şofben tamiri, bakımı ve montajı. Avrupa ve Anadolu Yakası'nda aynı gün servis. 0552 713 67 67 — hemen arayın.",
+      "İstanbul'da hermetik şofben tamiri, bakımı ve montajı. İstanbul genelinde aynı gün servis. 0552 713 67 67 — hemen arayın.",
     h1: "Hermetik Şofben Servisi",
     h2Service: "Hermetik Şofben Tamir ve Bakım Hizmeti",
     serviceDescription:
@@ -72,7 +72,7 @@ export const SEO_PAGES: SeoPageData[] = [
       "Baymak hermetik modellere özel servis tecrübesi",
       "Hızlı parça temini ve aynı gün müdahale",
       "Gaz kaçağı kontrolü her işlem sonrası yapılır",
-      "Avrupa ve Anadolu Yakası'na mobil ekip",
+      "İstanbul genelinde mobil ekip",
     ],
     h2Regions: "Bölge Servisi",
     regionText: `Baymak hermetik şofben servisi için ${regionBase}`,
@@ -82,7 +82,7 @@ export const SEO_PAGES: SeoPageData[] = [
     slug: "eca-hermetik-sofben-servisi",
     title: "ECA Hermetik Şofben Servisi İstanbul | 7/24 Teknik Servis",
     description:
-      "ECA hermetik şofben arıza, bakım ve montaj servisi. İstanbul Avrupa ve Anadolu Yakası. 0850 346 54 57 veya 0552 713 67 67.",
+      "ECA hermetik şofben arıza, bakım ve montaj servisi. İstanbul genelinde servis. 0850 346 54 57 veya 0552 713 67 67.",
     h1: "ECA Hermetik Şofben Servisi",
     h2Service: "ECA Hermetik Şofben Servis Hizmeti",
     serviceDescription:
@@ -159,7 +159,7 @@ export const SEO_PAGES: SeoPageData[] = [
       "Vaillant cihazlarda deneyimli servis kadrosu",
       "Orijinal veya üretici onaylı parça",
       "Montaj sonrası gaz kaçağı testi",
-      "İstanbul'un iki yakasına hızlı ulaşım",
+      "İstanbul genelinde hızlı ulaşım",
     ],
     h2Regions: "Bölge Servisi",
     regionText: `Vaillant hermetik şofben için ${regionBase}`,
@@ -198,7 +198,7 @@ export const SEO_PAGES: SeoPageData[] = [
     slug: "goldtherm-hermetik-sofben-servisi",
     title: "Goldtherm Hermetik Şofben Servisi İstanbul | 7/24 Servis",
     description:
-      "Goldtherm hermetik şofben tamiri ve bakımı. İstanbul Avrupa Yakası ve Anadolu Yakası servis. 0552 713 67 67.",
+      "Goldtherm hermetik şofben tamiri ve bakımı. İstanbul genelinde servis. 0552 713 67 67.",
     h1: "Goldtherm Hermetik Şofben Servisi",
     h2Service: "Goldtherm Hermetik Şofben Servis Desteği",
     serviceDescription:
@@ -246,7 +246,7 @@ export const SEO_PAGES: SeoPageData[] = [
       "Termodinamik modellere aşina ekip",
       "Arıza tekrarında ücretsiz kontrol imkânı",
       "Montaj ve taşıma işlemlerinde dikkatli işçilik",
-      "Avrupa Yakası ve Anadolu Yakası eşit servis ağı",
+      "İstanbul genelinde eşit servis ağı",
     ],
     h2Regions: "Bölge Servisi",
     regionText: `Termodinamik hermetik şofben servisi ${regionBase}`,
@@ -285,7 +285,7 @@ export const SEO_PAGES: SeoPageData[] = [
     slug: "termomex-hermetik-sofben-servisi",
     title: "Termomex Hermetik Şofben Servisi | İstanbul 7/24 Tamir",
     description:
-      "Termomex hermetik şofben tamiri ve bakımı İstanbul genelinde. Avrupa ve Anadolu Yakası. 0850 346 54 57.",
+      "Termomex hermetik şofben tamiri ve bakımı İstanbul genelinde. 0850 346 54 57.",
     h1: "Termomex Hermetik Şofben Servisi",
     h2Service: "Termomex Hermetik Şofben Bakım ve Tamir",
     serviceDescription:
@@ -304,7 +304,7 @@ export const SEO_PAGES: SeoPageData[] = [
       "Termomex cihazlarda hızlı arıza teşhisi",
       "Yedek parça ve işçilik garantisi",
       "Acil durumlarda öncelikli servis",
-      "İstanbul'un iki yakasında aktif ekip",
+      "İstanbul genelinde aktif ekip",
     ],
     h2Regions: "Bölge Servisi",
     regionText: `Termomex hermetik şofben servisi ${regionBase}`,
