@@ -27,6 +27,7 @@ import DevicesGallery from "@/components/DevicesGallery";
 import BrandsSection from "@/components/BrandsSection";
 import PulseDot from "@/components/PulseDot";
 import HeroVisual from "@/components/HeroVisual";
+import RegionServiceSection from "@/components/RegionServiceSection";
 import SeoKeywordsSection from "@/components/SeoKeywordsSection";
 import {
   DISTRICTS,
@@ -182,7 +183,7 @@ export default function HomePage() {
                   mb: 4,
                 }}
               >
-                İstanbul genelinde doğalgazlı şofben
+                Avrupa Yakası ve Anadolu Yakası&apos;nda doğalgazlı şofben
                 tamiri, bakımı ve kombi servisi. Aynı gün yerinde müdahale için
                 hemen arayın.
               </Typography>
@@ -455,19 +456,25 @@ export default function HomePage() {
                     >
                       {service.description}
                     </Typography>
-                    <Stack
-                      direction="row"
-                      spacing={0.5}
+                    {"href" in service && (
+                      <Box
+                        component="a"
+                        href={service.href}
                       sx={{
+                        display: "inline-flex",
                         alignItems: "center",
+                        gap: 0.5,
                         color: brandOrange,
                         fontWeight: 600,
                         fontSize: "0.875rem",
+                        textDecoration: "none",
+                        "&:hover": { textDecoration: "underline" },
                       }}
                     >
                       Detaylı Bilgi
                       <ArrowForwardIcon sx={{ fontSize: 16 }} />
-                    </Stack>
+                    </Box>
+                    )}
                   </CardContent>
                 </Card>
               </Grid>
@@ -477,6 +484,8 @@ export default function HomePage() {
       </Box>
 
       <SeoKeywordsSection />
+
+      <RegionServiceSection />
 
       {/* Process */}
       <Box component="section" sx={{ py: { xs: 8, lg: 12 }, bgcolor: "#fff" }}>
@@ -610,7 +619,7 @@ export default function HomePage() {
               color="text.secondary"
               sx={{ fontSize: "1.125rem", lineHeight: 1.7 }}
             >
-              İstanbul genelinde 20&apos;den fazla ilçede hizmet
+              Avrupa ve Anadolu yakasında 20&apos;den fazla ilçede hizmet
               vermekteyiz. Bulunduğunuz bölgeye en yakın ekibimizi anında
               yönlendiriyoruz.
             </Typography>

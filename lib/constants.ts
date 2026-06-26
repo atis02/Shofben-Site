@@ -3,19 +3,19 @@ export const SITE = {
   title:
     "Hermetik Şofben Servisi | İstanbul Doğalgazlı Şofben, Kombi ve Teknik Servis",
   description:
-    "İstanbul genelinde hermetik şofben tamiri, bakımı ve kombi servisi. Aynı gün yerinde müdahale. Hemen arayın: 0552 713 67 67.",
+    "İstanbul Avrupa ve Anadolu Yakası'nda hermetik şofben tamiri, bakımı ve kombi servisi. Aynı gün yerinde müdahale. Hemen arayın: 0850 346 54 57.",
   email: "info@dogalgazsofben.com",
   logo: "/logo.avif",
   phones: [
     {
-      label: "Telefon",
-      display: "0552 713 67 67",
-      href: "tel:+905527136767",
-    },
-    {
-      label: "Telefon",
+      label: "Çağrı Merkezi",
       display: "0850 346 54 57",
       href: "tel:+908503465457",
+    },
+    {
+      label: "Mobil Hat",
+      display: "0552 713 67 67",
+      href: "tel:+905527136767",
     },
   ],
   whatsapp: {
@@ -23,8 +23,8 @@ export const SITE = {
     display: "0552 713 67 67",
     href: "https://wa.me/905527136767",
   },
-  phone: "0552 713 67 67",
-  phoneHref: "tel:+905527136767",
+  phone: "0850 346 54 57",
+  phoneHref: "tel:+908503465457",
   whatsappHref: "https://wa.me/905527136767",
 } as const;
 
@@ -164,12 +164,12 @@ export const SEO_KEYWORD_BLOCKS = [
   },
   {
     title: "Şofben Bakımı",
-    text: "Yıllık şofben bakımı, kireç temizliği ve gaz ayarı ile cihazınızın ömrünü uzatır, yakıt tüketimini düşürürsünüz. İstanbul genelinde bakım randevusu alabilirsiniz.",
+    text: "Yıllık şofben bakımı, kireç temizliği ve gaz ayarı ile cihazınızın ömrünü uzatır, yakıt tüketimini düşürürsünüz. İstanbul'un her iki yakasında bakım randevusu alabilirsiniz.",
     href: "/hermetik-sofben-servisi",
   },
   {
     title: "İstanbul Teknik Servis",
-    text: "İstanbul genelinde mobil servis araçlarımızla 7/24 ulaşılabilir teknik servis hizmeti veriyoruz. Acil arızalarda en yakın ekibimiz yola çıkar.",
+    text: "Avrupa Yakası ve Anadolu Yakası'nda mobil servis araçlarımızla 7/24 ulaşılabilir teknik servis hizmeti veriyoruz. Acil arızalarda en yakın ekibimiz yola çıkar.",
     href: "/hermetik-sofben-servisi",
   },
 ] as const;
@@ -184,6 +184,19 @@ export const BRAND_LINKS = [
   { name: "ECA", href: "/eca-hermetik-sofben-servisi" },
   { name: "Baymak", href: "/baymak-hermetik-sofben-servisi" },
   { name: "Vaillant", href: "/vaillant-hermetik-sofben-servisi" },
+] as const;
+
+export const REGION_SERVICE_FEATURES = [
+  "Hermetik Şofben Servisi",
+  "Doğalgazlı Şofben Servisi",
+  "Kombi Teknik Servisi",
+  "Arıza Tespiti",
+  "Tamir",
+  "Bakım",
+  "Yerinde Servis",
+  "Garantili Hizmet",
+  "Aynı Gün Servis",
+  "7/24 Teknik Destek",
 ] as const;
 
 export const FEATURES = [
@@ -231,36 +244,42 @@ export const SERVICES = [
     title: "Şofben Tamiri",
     description:
       "Su ısıtmama, alev almama, su sızdırma gibi tüm arızalara profesyonel müdahale. Arıza tespiti ve onarımı aynı gün içinde tamamlanır.",
+    href: "/hermetik-sofben-servisi",
   },
   {
     icon: "🛡️",
     title: "Şofben Bakımı",
     description:
       "Düzenli bakım şofbeninizin ömrünü uzatır, verimliliğini artırır. Yıllık periyodik bakım paketlerimizle kombi ve şofbeninizi koruyun.",
+    href: "/hermetik-sofben-servisi",
   },
   {
     icon: "⚙️",
     title: "Şofben Montajı",
     description:
       "Yeni şofbeninizin güvenli ve standartlara uygun montajı. Tüm marka ve modeller için profesyonel kurulum hizmeti.",
+    href: "/hermetik-sofben-servisi",
   },
   {
     icon: "🔥",
     title: "Gaz Kaçağı Kontrolü",
     description:
       "Son teknoloji gaz dedektörleriyle kapsamlı gaz kaçağı testi. Güvenliğiniz için anında müdahale ve onarım.",
+    href: "/hermetik-sofben-servisi",
   },
   {
     icon: "🚨",
     title: "Acil Servis",
     description:
       "7/24 acil şofben servisi. İstanbul genelinde ortalama 30 dakikada adresinizdeyiz. Gece, gündüz, hafta sonu fark etmez.",
+    href: "/hermetik-sofben-servisi",
   },
   {
     icon: "📋",
     title: "Ücretsiz Keşif",
     description:
       "Şofben değişimi veya yeni montaj öncesi ücretsiz keşif hizmeti. En uygun çözümü birlikte belirleyelim.",
+    href: "/#iletisim",
   },
 ] as const;
 

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ServiceSeoPage from "@/components/ServiceSeoPage";
-import {
-  getAllSeoSlugs,
-  getSeoPageBySlug,
-} from "@/lib/seo-pages";
+import JsonLd from "@/components/JsonLd";
+import { buildSeoPageMetadata } from "@/lib/seo-metadata";
+import { servicePageSchemas } from "@/lib/structured-data";
+import { getAllSeoSlugs, getSeoPageBySlug } from "@/lib/seo-pages";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -19,13 +19,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const page = getSeoPageBySlug(slug);
   if (!page) return {};
 
-  return {
-    title: page.title,
-    description: page.description,
-    alternates: {
-      canonical: `/${page.slug}`,
-    },
-  };
+  return buildSeoPageMetadata(page);
 }
 
 export default async function SeoServicePage({ params }: PageProps) {
@@ -36,5 +30,10 @@ export default async function SeoServicePage({ params }: PageProps) {
     notFound();
   }
 
-  return <ServiceSeoPage page={page} />;
+  return (
+    <>
+      <JsonLd data={servicePageSchemas(page)} />
+      <ServiceSeoPage page={page} />
+    </>
+  );
 }

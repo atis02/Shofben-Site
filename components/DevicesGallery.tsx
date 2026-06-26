@@ -50,6 +50,7 @@ function DeviceCard({
           src={device.image}
           alt={device.title}
           fill
+          loading={large ? "eager" : "lazy"}
           sizes={large ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 50vw, 25vw"}
           style={{ objectFit: "cover", transition: "transform 0.7s" }}
         />

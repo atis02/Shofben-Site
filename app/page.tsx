@@ -1,15 +1,26 @@
 import type { Metadata } from "next";
 import HomePage from "@/components/HomePage";
-import { SITE } from "@/lib/constants";
+import JsonLd from "@/components/JsonLd";
+import { FAQ_ITEMS, SITE } from "@/lib/constants";
+import { buildPageMetadata } from "@/lib/seo-metadata";
+import { homeFaqSchema } from "@/lib/structured-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: SITE.title,
   description: SITE.description,
-  alternates: {
-    canonical: "/",
-  },
-};
+  path: "/",
+});
 
 export default function Home() {
-  return <HomePage />;
+  const faq = FAQ_ITEMS.map((item) => ({
+    question: item.question,
+    answer: item.answer,
+  }));
+
+  return (
+    <>
+      <JsonLd data={homeFaqSchema(faq)} />
+      <HomePage />
+    </>
+  );
 }

@@ -219,7 +219,7 @@ export default function Footer() {
                 <Box>
                   <Typography sx={{ fontWeight: 700 }}>İstanbul</Typography>
                   <Typography variant="body2" sx={{ color: "#94a3b8" }}>
-                    Tüm İstanbul
+                    Avrupa & Anadolu Yakası
                   </Typography>
                 </Box>
               </Box>
