@@ -3,8 +3,8 @@ export const SITE = {
   title:
     "Hermetik Şofben Servisi | İstanbul Doğalgazlı Şofben, Kombi ve Teknik Servis",
   description:
-    "İstanbul Avrupa ve Anadolu Yakası'nda hermetik şofben tamiri, bakımı ve kombi servisi. Aynı gün yerinde müdahale. Hemen arayın: 0850 346 54 57.",
-  email: "info@dogalgazsofben.com",
+    "İstanbul genelinde hermetik şofben tamiri, bakımı ve kombi servisi. Aynı gün yerinde müdahale. Hemen arayın: 0850 346 54 57.",
+  email: "info@sofbenservis.com",
   logo: "/logo.avif",
   phones: [
     {
