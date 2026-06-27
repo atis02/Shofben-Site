@@ -38,6 +38,7 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <head>
+        <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
