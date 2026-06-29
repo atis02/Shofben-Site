@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Inter", "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: var(--font-inter), "Roboto", "Helvetica", "Arial", sans-serif;
   background: #ffffff;
   color: #0f172a;
   -webkit-font-smoothing: antialiased;

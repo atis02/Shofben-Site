@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { SITE } from "@/lib/constants";
+import { inter, plusJakartaSans } from "@/lib/fonts";
 import { GA_MEASUREMENT_ID, SITE_NAME, SITE_URL } from "@/lib/site-config";
 import "./globals.css";
 
@@ -36,21 +37,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr">
-      <head>
-        <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body>
+    <html lang="tr" className={`${inter.variable} ${plusJakartaSans.variable}`}>
+      <body className={inter.className}>
         <ThemeRegistry>
           <Header />
           <main>{children}</main>

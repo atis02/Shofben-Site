@@ -35,21 +35,21 @@ export const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: 'var(--font-inter), "Roboto", "Helvetica", "Arial", sans-serif',
     h1: {
-      fontFamily: '"Plus Jakarta Sans", "Inter", sans-serif',
+      fontFamily: 'var(--font-plus-jakarta), var(--font-inter), sans-serif',
       fontWeight: 800,
     },
     h2: {
-      fontFamily: '"Plus Jakarta Sans", "Inter", sans-serif',
+      fontFamily: 'var(--font-plus-jakarta), var(--font-inter), sans-serif',
       fontWeight: 700,
     },
     h3: {
-      fontFamily: '"Plus Jakarta Sans", "Inter", sans-serif',
+      fontFamily: 'var(--font-plus-jakarta), var(--font-inter), sans-serif',
       fontWeight: 700,
     },
     h4: {
-      fontFamily: '"Plus Jakarta Sans", "Inter", sans-serif',
+      fontFamily: 'var(--font-plus-jakarta), var(--font-inter), sans-serif',
       fontWeight: 700,
     },
     button: {
