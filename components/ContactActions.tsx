@@ -4,6 +4,7 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { SITE } from "@/lib/constants";
+import { onPhoneClick, onWhatsAppClick } from "@/lib/analytics";
 
 type ContactActionsProps = {
   layout?: "row" | "column";
@@ -32,6 +33,7 @@ export default function ContactActions({
           key={phone.href}
           component="a"
           href={phone.href}
+          onClick={onPhoneClick(phone.display)}
           variant="contained"
           color="primary"
           size={size}
@@ -44,6 +46,7 @@ export default function ContactActions({
       <Button
         component="a"
         href={SITE.whatsappHref}
+        onClick={onWhatsAppClick()}
         target="_blank"
         rel="noopener noreferrer"
         variant="contained"

@@ -38,6 +38,7 @@ import {
   SERVICES,
   SITE,
 } from "@/lib/constants";
+import { onPhoneClick, onWhatsAppClick } from "@/lib/analytics";
 import {
   brandNavy,
   brandNavyLight,
@@ -196,6 +197,7 @@ export default function HomePage() {
                 <Button
                   component="a"
                   href={SITE.phoneHref}
+                  onClick={onPhoneClick(SITE.phone)}
                   variant="contained"
                   size="large"
                   startIcon={<PhoneIcon />}
@@ -206,6 +208,7 @@ export default function HomePage() {
                 <Button
                   component="a"
                   href={SITE.phones[1].href}
+                  onClick={onPhoneClick(SITE.phones[1].display)}
                   variant="contained"
                   size="large"
                   startIcon={<PhoneIcon />}
@@ -222,6 +225,7 @@ export default function HomePage() {
                 <Button
                   component="a"
                   href={SITE.whatsappHref}
+                  onClick={onWhatsAppClick()}
                   target="_blank"
                   rel="noopener noreferrer"
                   variant="outlined"
@@ -563,6 +567,7 @@ export default function HomePage() {
               <Button
                 component="a"
                 href={SITE.phoneHref}
+                onClick={onPhoneClick(SITE.phone)}
                 variant="contained"
                 size="large"
                 startIcon={<PhoneIcon />}
@@ -577,6 +582,7 @@ export default function HomePage() {
               <Button
                 component="a"
                 href={SITE.phones[1].href}
+                onClick={onPhoneClick(SITE.phones[1].display)}
                 variant="contained"
                 size="large"
                 startIcon={<PhoneIcon />}
@@ -591,6 +597,7 @@ export default function HomePage() {
               <Button
                 component="a"
                 href={SITE.whatsappHref}
+                onClick={onWhatsAppClick()}
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="contained"
@@ -728,6 +735,7 @@ export default function HomePage() {
                     key={phone.href}
                     component="a"
                     href={phone.href}
+                    onClick={onPhoneClick(phone.display)}
                     sx={{
                       p: 0.5,
                       textDecoration: "none",
@@ -773,6 +781,7 @@ export default function HomePage() {
                 <Card
                   component="a"
                   href={SITE.whatsappHref}
+                  onClick={onWhatsAppClick()}
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{

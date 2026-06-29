@@ -16,6 +16,7 @@ import {
 import SendIcon from "@mui/icons-material/Send";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { SITE } from "@/lib/constants";
+import { onPhoneClick, trackLead } from "@/lib/analytics";
 
 const SERVICE_TYPES = [
   "Şofben Tamiri",
@@ -32,7 +33,15 @@ export default function ContactForm() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const form = event.currentTarget;
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
     setSubmitted(true);
+    trackLead("contact_form");
   };
 
   if (submitted) {
@@ -48,6 +57,7 @@ export default function ContactForm() {
           <Box
             component="a"
             href={SITE.phoneHref}
+            onClick={onPhoneClick(SITE.phone)}
             sx={{ color: "primary.main", fontWeight: 600, textDecoration: "none" }}
           >
             {SITE.phone}
@@ -56,6 +66,7 @@ export default function ContactForm() {
           <Box
             component="a"
             href={SITE.phones[1].href}
+            onClick={onPhoneClick(SITE.phones[1].display)}
             sx={{ color: "primary.main", fontWeight: 600, textDecoration: "none" }}
           >
             {SITE.phones[1].display}

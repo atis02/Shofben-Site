@@ -22,6 +22,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import PhoneIcon from "@mui/icons-material/Phone";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { NAV_LINKS, SITE } from "@/lib/constants";
+import { onPhoneClick, onWhatsAppClick } from "@/lib/analytics";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -65,6 +66,7 @@ export default function Header() {
               <Button
                 component="a"
                 href={SITE.phoneHref}
+                onClick={onPhoneClick(SITE.phone)}
                 startIcon={<PhoneIcon />}
                 color="inherit"
                 sx={{ fontWeight: 600, color: "secondary.main" }}
@@ -85,6 +87,7 @@ export default function Header() {
             <IconButton
               component="a"
               href={SITE.phoneHref}
+              onClick={onPhoneClick(SITE.phone)}
               sx={{ display: { xs: "inline-flex", lg: "none" }, mr: 1 }}
               color="primary"
             >
@@ -132,6 +135,7 @@ export default function Header() {
             variant="outlined"
             component="a"
             href={SITE.whatsappHref}
+            onClick={onWhatsAppClick()}
             target="_blank"
             rel="noopener noreferrer"
             startIcon={<WhatsAppIcon />}

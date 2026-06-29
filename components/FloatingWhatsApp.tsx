@@ -3,6 +3,7 @@
 import { Fab, Tooltip } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { SITE } from "@/lib/constants";
+import { onWhatsAppClick } from "@/lib/analytics";
 
 export default function FloatingWhatsApp() {
   return (
@@ -10,6 +11,7 @@ export default function FloatingWhatsApp() {
       <Fab
         component="a"
         href={SITE.whatsappHref}
+        onClick={onWhatsAppClick()}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp ile iletişime geç"

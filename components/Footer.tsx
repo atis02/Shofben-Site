@@ -1,3 +1,5 @@
+"use client";
+
 import Logo from "@/components/Logo";
 import {
   Box,
@@ -16,6 +18,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ShieldIcon from "@mui/icons-material/Shield";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import { BRAND_LINKS, FOOTER_SERVICES, SITE } from "@/lib/constants";
+import { onPhoneClick, onWhatsAppClick } from "@/lib/analytics";
 import { brandNavy } from "@/lib/theme";
 
 export default function Footer() {
@@ -40,6 +43,7 @@ export default function Footer() {
               <Box
                 component="a"
                 href={SITE.phoneHref}
+                onClick={onPhoneClick(SITE.phone)}
                 sx={{
                   display: "flex",
                   alignItems: "center",
@@ -57,6 +61,7 @@ export default function Footer() {
               <Box
                 component="a"
                 href={SITE.whatsappHref}
+                onClick={onWhatsAppClick()}
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
@@ -163,6 +168,7 @@ export default function Footer() {
                   key={phone.href}
                   component="a"
                   href={phone.href}
+                  onClick={onPhoneClick(phone.display)}
                   sx={{
                     display: "flex",
                     gap: 1.5,
@@ -184,6 +190,7 @@ export default function Footer() {
               <Box
                 component="a"
                 href={SITE.whatsappHref}
+                onClick={onWhatsAppClick()}
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
